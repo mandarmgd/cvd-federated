@@ -1,2 +1,4 @@
-__pycache__ 
-.ipynb_checkpoints
+__pycache__/
+.ipynb_checkpoints/
+federated_voting_metrics.json
+federated_voting_models.pkl
