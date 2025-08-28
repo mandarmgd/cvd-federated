@@ -37,6 +37,7 @@ for idx, cluster in zip(healthy_indices, clusters):
         df.at[idx, 'NEW_DEATH_EVENT'] = 2
 
 df.drop('DEATH_EVENT', axis=1, inplace=True)
+df.drop('Unnamed: 0', axis=1)
 df.to_csv('heart_failure2.csv', index=False)
 
 df_new = pd.read_csv('heart_failure2.csv')
